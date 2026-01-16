@@ -1,0 +1,5 @@
+My name is Eshaan Nair.
+I am a computer science engineering student.
+I enjoy working with data structures and algorithms.
+In this project, I implemented Huffman coding in C++.
+This program demonstrates file compression and decompression using Huffman coding.
