@@ -162,7 +162,7 @@ void freeTree(Node* root) {
 }
 
 int main() { 
-    string data=readFile("input.txt");
+    string data=readFile("data/input.txt");
     if(data.empty()) {
         cout<<"Input file is empty!"<<endl;
         return 0;
@@ -174,18 +174,18 @@ int main() {
     unordered_map<char, string> codes;
     generateCode(root, "", codes);
 
-    saveHuffmanCodes(codes, "SavedHuffmanCodes.txt");
+    saveHuffmanCodes(codes, "data/SavedHuffmanCodes.txt");
 
     string encoded=encodeText(data, codes);
-    convertToBinary("Compressed.bin", encoded);
+    convertToBinary("data/Compressed.bin", encoded);
     
     //writeFile("Compressed.txt", encoded); //Previous version before binary conversion
 
     string decoded=decodeText(root, encoded);
-    writeFile("Decompressed.txt", decoded);
+    writeFile("data/Decompressed.txt", decoded);
 
-    long long originalSize=getFileSize("input.txt");
-    long long compressedSize=getFileSize("Compressed.bin");
+    long long originalSize=getFileSize("data/input.txt");
+    long long compressedSize=getFileSize("data/Compressed.bin");
     double ratio=(double)compressedSize/originalSize*100;
     cout<<"Original Size: "<<originalSize<<" bytes"<<endl;
     cout<<"Compressed Size: "<<compressedSize<<" bytes"<<endl;
@@ -194,3 +194,4 @@ int main() {
     freeTree(root);
     return 0;
 }
+
