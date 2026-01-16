@@ -60,13 +60,13 @@ g++ main.cpp -o huffman
 
 ---
 ## Example Input:
-<img width="902" height="153" alt="image" src="https://github.com/user-attachments/assets/0d86bfdc-e9c1-430d-9309-3ff421349696" />
+Screenshots/Screenshot 2026-01-16 173758.png
 
 ## Example Saved Huffman Codes:
-<img width="323" height="837" alt="image" src="https://github.com/user-attachments/assets/e34a8784-e2ff-4691-8aa0-ece344c7d866" />
+Screenshots/Screenshot 2026-01-16 173916.png
 
 ## Example Compression Result:
-<img width="857" height="112" alt="image" src="https://github.com/user-attachments/assets/1582b872-f249-4290-8dc3-4bf0ba7e1318" />
+Screenshots/Screenshot 2026-01-16 172945.png
 
 ---
 
