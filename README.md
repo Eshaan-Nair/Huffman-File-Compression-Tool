@@ -60,13 +60,13 @@ g++ main.cpp -o huffman
 
 ---
 ## Example Input:
-Screenshots/Screenshot 2026-01-16 173758.png
+![Compression Input](Screenshots/Screenshot 2026-01-16 173758.png)
 
 ## Example Saved Huffman Codes:
-Screenshots/Screenshot 2026-01-16 173916.png
+![Huffman Codes](Screenshots/Screenshot 2026-01-16 173916.png)
 
 ## Example Compression Result:
-Screenshots/Screenshot 2026-01-16 172945.png
+![Compression Output](Screenshots/Screenshot 2026-01-16 172945.png)
 
 ---
 
