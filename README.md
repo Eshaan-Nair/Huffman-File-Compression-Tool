@@ -29,7 +29,9 @@ The tool reads a text file, compresses it into a binary format, stores the Huffm
 
 ## Project Structure
 Huffman_Compression_Project/
+
 │
+
 ├── main.cpp # Complete compression & decompression logic
 
 ├── input.txt # Sample input file
@@ -38,7 +40,7 @@ Huffman_Compression_Project/
 
 ├── compressed.txt # Compressed '0' & '1' output
 
-├── codes.txt # Stored Huffman codes (header)
+├── codes.txt # Stored Huffman codes
 
 ├── decompressed.txt # Decompressed output
 
@@ -103,7 +105,7 @@ g++ main.cpp -o huffman
 ---
 
 # Author
-## Eshaan Nair
+### Eshaan Nair
 
 
 
