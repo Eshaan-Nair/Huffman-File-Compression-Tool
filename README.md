@@ -1,4 +1,4 @@
-<div align="center">
+
 # Huffman-File-Compression-Tool
 This project is a file compression and decompression tool implemented in C++ using **Huffman Coding**, a greedy compression algorithm.  
 The tool reads a text file, compresses it into a binary format, stores the Huffman codebook, and is capable of fully decompressing the file back to its original form.
@@ -29,7 +29,7 @@ The tool reads a text file, compresses it into a binary format, stores the Huffm
 ---
 
 ## Project Structure
-</div>
+
 Huffman_Compression_Project/
 
 │
@@ -47,7 +47,7 @@ Huffman_Compression_Project/
 ├── decompressed.txt # Decompressed output
 
 └── README.md
-<div align="center">
+
 
 ---
 
@@ -108,8 +108,6 @@ g++ main.cpp -o huffman
 
 # Author
 ### Eshaan Nair
-
-</div>
 
 
 
