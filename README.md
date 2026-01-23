@@ -29,6 +29,7 @@ The tool reads a text file, compresses it into a binary format, stores the Huffm
 ---
 
 ## Project Structure
+</div>
 Huffman_Compression_Project/
 
 │
@@ -46,7 +47,7 @@ Huffman_Compression_Project/
 ├── decompressed.txt # Decompressed output
 
 └── README.md
-
+<div align="center">
 
 ---
 
