@@ -1,11 +1,25 @@
+# Huffman File Compression Tool
 
-# Huffman-File-Compression-Tool
-This project is a file compression and decompression tool implemented in C++ using **Huffman Coding**, a greedy compression algorithm.  
-The tool reads a text file, compresses it into a binary format, stores the Huffman codebook, and is capable of fully decompressing the file back to its original form.
+A file compression and decompression tool implemented in C++ using **Huffman Coding**, a greedy compression algorithm. The tool reads a text file, compresses it into a binary format, stores the Huffman codebook, and is capable of fully decompressing the file back to its original form.
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [How Huffman Coding Works](#how-huffman-coding-works)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Examples](#examples)
+- [Performance](#performance)
+- [Limitations](#limitations)
+- [Future Improvements](#future-improvements)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
 
 ---
 
 ## Features
+
 - Compresses text files using Huffman Coding
 - Decompresses compressed files using a stored codebook
 - Uses binary (bit-level) storage for real compression
@@ -16,110 +30,121 @@ The tool reads a text file, compresses it into a binary format, stores the Huffm
 
 ---
 
-## How Huffman Coding works
-1. Count the frequency of each character in the input file
-2. Build a min-heap (priority queue) based on character frequencies
-3. Construct a Huffman tree using a greedy approach
-4. Generate prefix-free binary codes for each character
-5. Encode the input file using these codes
-6. Pack bits into bytes and write to a binary file
-7. Store the Huffman codebook for decompression
-8. Decode by traversing the Huffman tree using the stored codes
+## How Huffman Coding Works
+
+The compression process follows these steps:
+
+1. **Count Frequency** - Count the frequency of each character in the input file
+2. **Build Min-Heap** - Build a min-heap (priority queue) based on character frequencies
+3. **Construct Tree** - Construct a Huffman tree using a greedy approach
+4. **Generate Codes** - Generate prefix-free binary codes for each character
+5. **Encode File** - Encode the input file using these codes
+6. **Pack Bits** - Pack bits into bytes and write to a binary file
+7. **Store Codebook** - Store the Huffman codebook for decompression
+8. **Decode** - Decode by traversing the Huffman tree using the stored codes
 
 ---
 
 ## Project Structure
 
+```
 Huffman_Compression_Project/
-
 │
-
-├── main.cpp # Complete compression & decompression logic
-
-├── input.txt # Sample input file
-
-├── compressed.bin # Compressed binary output
-
-├── compressed.txt # Compressed '0' & '1' output
-
-├── codes.txt # Stored Huffman codes
-
-├── decompressed.txt # Decompressed output
-
-└── README.md
-
+├── main.cpp              # Complete compression & decompression logic
+├── input.txt             # Sample input file
+├── compressed.bin        # Compressed binary output
+├── compressed.txt        # Compressed '0' & '1' output
+├── codes.txt             # Stored Huffman codes
+├── decompressed.txt      # Decompressed output
+└── README.md             # Project documentation
+```
 
 ---
 
-## How to Run
+## Getting Started
 
-### 1. Compile
+### Prerequisites
+- C++ compiler (g++ recommended)
+- Standard C++ libraries
+
+### Compilation
+
 ```bash
 g++ main.cpp -o huffman
 ```
-### 2. Run
-```
+
+### Running the Program
+
+```bash
 ./huffman
 ```
 
 ---
-## Example Input:
-![Compression Input](Screenshots/Screenshot2026-01-16173758.png)
 
-## Example Saved Huffman Codes:
-![Huffman Codes](Screenshots/Screenshot2026-01-16173916.png)
+## Examples
 
-## Example Compression Result:
-![Compression Output](Screenshots/Screenshot2026-01-16172945.png)
+### Example Input
+![Compression Input](Screenshots/input.png)
+
+### Example Saved Huffman Codes
+![Huffman Codes](Screenshots/codes.png)
+
+### Example Compression Result
+![Compression Output](Screenshots/ratio.png)
 
 ---
 
-## Time and Space Complexity
-- Building the Frequency Table: O(n)
-- Building Huffman Tree: O(k logk) where k is the number of unique Characters
-- Encoding: O(n)
-- Decoding: O(n)
+## Performance
+
+### Time Complexity
+- **Building the Frequency Table:** O(n)
+- **Building Huffman Tree:** O(k log k) where k is the number of unique characters
+- **Encoding:** O(n)
+- **Decoding:** O(n)
+
+### Space Complexity
+- Loads entire file into memory
+- Additional space for Huffman tree and codebook storage
 
 ---
 
 ## Limitations
-1. Designed for textfiles (not binary files like images and videos).
-2. Loads entire file into memory.
-3. Compression efficiency depends on character distribution.
+
+1. Designed for text files (not binary files like images and videos)
+2. Loads entire file into memory
+3. Compression efficiency depends on character distribution
 
 ---
 
-## Possible Improvements
-- Streaming compression for large files.
-- Support for binary/non-text files.
-- CLI arguments for input/output paths.
-- Performance optimization using fixed-size arrays.
-- Comparing compression ratio with standard tools (ZIP).
+## Future Improvements
+
+- Streaming compression for large files
+- Support for binary/non-text files
+- CLI arguments for input/output paths
+- Performance optimization using fixed-size arrays
+- Comparing compression ratio with standard tools (ZIP)
 
 ---
 
 ## Technologies Used
-- C++
-- STL (priority_queue, unordered_map, vector)
-- File I/O (fstream)
-- Bitwise operations
+
+- **Language:** C++
+- **Data Structures:** STL (priority_queue, unordered_map, vector)
+- **File Handling:** File I/O (fstream)
+- **Algorithms:** Bitwise operations, Huffman Coding
 
 ---
 
-# Author
-### Eshaan Nair
+## Author
 
+**Eshaan Nair**
 
+- GitHub: [@Eshaan-Nair](https://github.com/Eshaan-Nair)
 
+---
 
+<div align="center">
+  
+### If you find this project helpful, please consider giving it a star!
 
-
-
-
-
-
-
-
-
-
-
+</div>
